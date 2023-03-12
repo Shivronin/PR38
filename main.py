@@ -1,6 +1,6 @@
 from kivy.config import Config
 Config.set("graphics", "resizable", 0)
-from kivy.app import App
+from kivymd.app import MDApp
 from kivy.core.window import Window
 Window.size = (360, 800)
 from kivy.uix.screenmanager import ScreenManager, Screen, SlideTransition
@@ -42,7 +42,7 @@ class MainScreen(Screen):
     def open_gallery(self):
         self.manager.current = "Gallery"
 
-class MyApp(App):
+class MyApp(MDApp):
     def build(self):
         screen_manager = ScreenManager()
         main = MainScreen()

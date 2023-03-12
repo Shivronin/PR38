@@ -62,8 +62,8 @@ Builder.load_string(
     FloatLayout:
         Camera:
             id: camera
-            resolution: (640, 480)
-            size_hint: 1, 2
+            resolution: (360, 800)
+            size_hint: 1, 1
             pos_hint: {'center_x': 0.5, 'center_y': 0.5}
             play: True
         
